@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>SOC Command Center</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- OPERATIVE PROFILE -->
+<div class="panel profile">
+<h3>OPERATIVE_PROFILE</h3>
+
+<div class="agent">
+<img src="https://i.pravatar.cc/80">
+<div>
+<p><b>AGENT_K9</b></p>
+<p>STATUS: <span class="online">ONLINE</span></p>
+<p>RANK: SENIOR ANALYST</p>
+</div>
+</div>
+</div>
+
+
+<!-- SOC COMMAND -->
+<div class="panel command">
+<h2>SOC_COMMAND_CENTER</h2>
+<p>Current Time (UTC): <span id="clock"></span></p>
+<p class="danger">THREAT LEVEL: ELEVATED</p>
+</div>
+
+
+<!-- METRICS -->
+<div class="panel metrics">
+<h3>SYSTEM_METRICS // CIA_TRIAD</h3>
+
+<div class="circles">
+<div class="circle green">98%</div>
+<div class="circle pink">72%</div>
+<div class="circle blue">45%</div>
+</div>
+
+<p>CONFIDENTIALITY / INTEGRITY / AVAILABILITY</p>
+
+<p>PROBABILIDAD DE DESPIDO: 32%</p>
+<p>FONDOS DEL PROYECTO: 1.2M</p>
+</div>
+
+
+<!-- NAV -->
+<div class="panel nav">
+<h3>SYSTEM_NAV</h3>
+
+<button onclick="showSection('threats')">ACTIVE THREATS</button>
+<button onclick="showSection('log')">DECISION LOG</button>
+<button onclick="showSection('levels')">SECURITY LEVELS</button>
+<button onclick="showSection('progress')">GLOBAL PROGRESS</button>
+
+</div>
+
+
+<!-- THREAT ANALYSIS -->
+<div class="panel analysis">
+
+<h3>THREAT_ANALYSIS // VECTOR: SMS SPOOFING</h3>
+
+<h4>[ALERTA] SMS suplantando a directivos</h4>
+
+<p>
+Nos informan que se están recibiendo SMS haciéndose pasar por altos directivos
+de la empresa.
+</p>
+
+<p>El equipo Alfa propone:</p>
+
+<ul>
+<li>Denunciar a la policía</li>
+<li>Ignorar los mensajes</li>
+<li>Cambiar números y enviar alerta</li>
+</ul>
+
+<h4>Selecciona tu decisión</h4>
+
+<button class="decision">Denunciar y esperar a la policía</button>
+<button class="decision">Ignorar el ataque</button>
+<button class="decision">Cambiar números y alertar a todos</button>
+
+</div>
+
+
+<!-- ALERTS -->
+<div class="panel alerts">
+
+<h3>INCOMING ALERTS</h3>
+
+<div class="alert active">
+SMS SPOOFING DIRECTIVOS
+</div>
+
+<div class="alert pending">
+MALWARE INFECTION
+</div>
+
+<div class="alert critical">
+RANSOMWARE ENCRYPTION
+</div>
+
+<div class="alert resolved">
+DATA EXFILTRATION PREVENTED
+</div>
+
+<div class="alert pending">
+BRUTE FORCE ATTEMPT
+</div>
+
+</div>
+
+
+<!-- CONNECTION -->
+<div class="panel connection">
+SYSTEM_CONNECTION  
+<span>SECURE_CHANNEL_ESTABLISHED</span>
+</div>
+
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
